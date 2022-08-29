@@ -1,4 +1,4 @@
-name: sshinstalll
+name: pool
 
 on: 
   workflow_dispatch:
